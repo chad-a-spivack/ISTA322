@@ -1,0 +1,131 @@
+<!DOCTYPE html />
+<html>
+	<head>
+		<title>My First HTML page</title>
+		<style>
+			//CSS content goes here
+		</style>
+		<script>
+			<!--JavaScript goes here --> 
+		</script>
+		<meta name="Author" content="Chad Spivack" />
+		<meta name="File" content="lab1-html-spivack.html" />
+		<meta name="Date" content="February 22, 2021" />
+	</head>
+	<body>
+		<a id='top' /> <!-- this is a target anchor-->
+		<a href='#bottom'> Go to bottom</a> <!-- this is also a source anchor tag -->
+		<h1>ISTA 322 Lab 1 (HTML)</h1>
+		<h2>Part 1, HTML elements</h2>
+		<h3>Headers</h3>
+		<h4>Thomas Jefferson</h4>
+		<p>We hold these truths to be self evident, that all men are created equal. </p>
+		
+		<h4>Abraham Lincoln</h4>
+		<p>Four score and seven years ago.</p>
+		
+		<h2>Generic elements: &lt;div&gt; &lt;span &gt;</h2>
+		
+		<div>This is a block generic element.</div>
+		<div>This is a generic block element.</div>
+		<div>This is a generic block element</div>
+		<div>
+			<span style='font-variant: small-caps;'> This a generic inline element.</span>
+			<span style='background-color: #aaffaa;'>This is a generic inline element.</span>
+			<span style='font-family: sans-serif;'>This is a generic inline element.</span>
+		</div>
+		
+		
+		<h2> Hyper refs </h2>
+		<a href='http://github.com' target = 'new'>Go to Github</a><br />
+		<a href='http://amazon.com' target = 'new'>Go to Amazon</a><br />
+		<a href='http://nexusmods.com'target = 'new'>Go to Nexus Mods and game!</a><br />
+		
+		<h2>HTML tables</h2>
+		<center>
+		<table rules='all' style='border: 2px solid black;'>
+			<tr>
+				<th colspan='3' >Personnel</th>
+			</tr>
+			<tr> <!-- First row-->
+				<th>Name</th>
+				<th>Rank</th>
+				<th>S/N</th>
+			</tr>
+				
+			<tr> <!--Second row-->
+			
+				<td> Will </td>
+				<td> Captain </td>
+				<td> 123456789 </td>
+			</tr>
+			<tr>
+				<td> Patrick </td>
+				<td> Sergeant Major </td>
+				<td> 246810 </td>
+			</tr>
+			<tr>
+				<td> Shae </td>
+				<td> 1st LT </td>
+				<td> 3579013 </td>
+			</tr>
+		</table>
+		</center>
+		
+		<h2>HTML Form</h2>
+		
+		
+			<form method="GET" >
+				<input type='hidden' name='carl' id='carl' value='42' />
+				What is your name?<input type="text" name="Adam" id="Adam" /><br />
+				What is your password?<input type="password" name="betty" id="betty" /><br />
+				Color input: <input type='color' name='dave' id='dave' /><br />
+				Range input: <input type='range' name='earline' id='earline' value='50' 
+					min='0' max='100' step='5' oninput='frank.value =earline.value'>
+				<output id='frank' name='frank' ></output><br />
+				<h3>Pizza</h3>
+				Pepperoni: <input type="checkbox" name="pizza" id="pizza" value="pepperoni" />
+				Bell pepper: <input type="checkbox" name="pizza" id="pizza" value="bellpepper" />
+				Bacon: <input type="checkbox" name="pizza" id="pizza" value="bacon" />
+				Mushroom: <input type="checkbox" name="pizza" id="pizza" value="mushroom" />
+				Pineapple: <input type="checkbox" name="pizza" id="pizza" value="pineapple" />
+				Cheese: <input type="checkbox" name="pizza" id="pizza" value="cheese" />
+				<hr />
+				<select name="pizza2" id="pizza2" size=3 multiple='multiple'>
+					<option value='chicken'>Chicken</option>
+					<option value='proscuitto'>prosciutto</option>
+					<option value='sausage'>Sausage</option>
+					<option value='olives'>Black Olives</option>
+				</select>
+
+
+
+				
+				<h3>Sex</h3>
+				Male: <input type="radio" name="sex" id="sex" value="male" checked="checked"/><br />
+				Female: <input type="radio" name="sex" id="sex" value="female" />
+				
+				<h3>State of Birth</h3>
+				<select name="sob" id="sob">
+					<option value=''>Where were you born?</option>
+					<option value='CO'>Colorado</option>
+					<option value='NC'>North Carolina</option>
+					<option value='PA'>Pennsylvania</option>
+					<option value='OR'>Oregon</option>
+					<option value='IL'>Illinois</option>
+				</select>
+				<textarea name='ta' id='ta' value='Type Something'rows=5 cols=50>Type Something Here...</textarea>
+				
+				
+				
+				<hr />
+				<input type='submit' name='submit' value='Submit' />
+				<input type='reset' name='reset' value='Clear Form' />
+				<br />
+				
+			</form>
+<hr />
+		<a href='#top'>Go to top</a> <!--This is a source anchor -->
+		<a id='bottom' /> <!-- this is also a target anchor-->
+	</body>	
+</html>
