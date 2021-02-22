@@ -1,0 +1,50 @@
+# ASP.Net Homework chapter 1
+## Chad Spivack
+## February 21, 2021
+
+
+
+
+###. 1. (not in book) What is HTML? See https://www.w3.org/TR/html40/.
+
+
+Hyper Text Markup language. Universal internet language.  Need a common language to push information globally.
+
+
+###. 2. (not in book) What is HTTP? See https://www.w3.org/Protocols/rfc2616/rfc2616.html.
+
+HyperText Transfer Protocols.  Application-level protocol for the distributed, collaborative, hypermedia information systems
+
+###. 3. What is middleware? See pages 255-256 in the book.
+
+provides services to software applications beyond those available from the OS.
+
+###. 4. What is URL routing? See pages 282-283 in the book.
+
+
+Process of intercepting an incoming web request and automatically redirecting it to a different URL.
+
+###. 5. What is dependency injection? See pages 255-257 in the book.
+
+an object receives other objects that it depends on.
+
+###. 6. What is model binding? See pages 703-706 in the book.
+
+bridge between the HTTP request and the C# action
+
+###. 7. What are Razor pages?
+
+Used in conjunction with MVC for secondary features in order to speed up development process.
+
+###. 8. What is Entiity Framework Core?
+
+Allows developers to work with data without having to use underlying database fundamentals.
+
+
+###. 9. What is ASP.NET Core Identity?
+
+login functionality to applications
+
+###. 10. What is the ASP.NET Core platform?
+
+
