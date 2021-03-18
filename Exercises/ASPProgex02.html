@@ -1,0 +1,94 @@
+<!DOCTYPE html />
+<html>
+	<head>
+		<title>Save a recipe</title>
+		<meta name="Author" content="Chad Spivack" />
+		<meta name="File" content="ASPProgex01.html" />
+		<meta name="Date" content="February 23, 2021" />
+	</head>
+	<style>
+		body {
+			background-color: #ffefd5;
+			color: #800000;
+		}
+		h1 {
+			text-align: center;
+			font-variant: small-caps;
+			letter-spacing: 10px;
+			border-style: ridge;
+			border-width: 5px;
+			font-size: 48pt;
+		}
+		h2 {
+			text-align: center;
+			padding: 6px;
+			font-variant: small-caps;
+			font-size: 36pt;
+			letter-spacing: 2px;
+		}
+		
+		.Recipe {
+			text-align: center;
+			font-variant: small-caps;
+			font-size: 24pt;
+		}
+		#Recipe_Name {
+			font-size: 24pt;
+			overflow: scroll;
+			
+		}
+		.cooktime {
+			text-align: center;
+			font-size: 24pt;
+			font-variant: small-caps;
+			
+		}
+		.description {
+			text-align: center;
+			font-size: 24pt;
+			padding: 12px;
+			font-variant: small-caps;
+		}
+		#hours {
+			font-size: 24pt;
+		}
+		#minutes {
+			font-size: 24pt;
+		}
+	
+		
+		
+	</style>
+	<body>
+		<a id='top' />
+		<div style="text-align: center;"><a href='#bottom'>Go to bottom</a></div>
+		<h1>The Goods</h1>
+		<h2>How The Magic Happened</h2>
+			<form method="GET">
+				<div class="Recipe"><span style="padding: 12px;padding-right: 56pt;">What is your dish called? </span><input  type='text' name='Recipe Name' id='Recipe_Name' /></div><br /><br />
+			
+				<div class="cooktime"><span style="padding: 12px; ">How many hours of cook time?</span><input type='text' name='hours' id='hours' /> <br /><br />
+				<div class="description">Describe how made you made it<br />
+				<textarea name='description' id='description' value='Give us the juicy cooking deets!'rows=20 cols=100>Give us the juicy deets!...</textarea></div>
+					<select name='Foodtype' id='foodtype'>
+					<option value=' '>What type of dish is this?</option>
+					<option value='poultry'>Poultry</option>
+					<option value='pork'>Pork</option>
+					<option value='Beef'>Beef</option>
+					<option value='Big Game'>Big Game</option>
+					<option value='Fish'>Fish</option>
+					<option value='Vegetables'>Veggies</option>
+					<option value='Dessert'>Dessert</option>
+				</select><br /><br />
+				How good was this dish?: <input type='range' name='earline' id='earline' value='5' 
+					min='0' max='10' step='1' oninput='frank.value =earline.value'>
+				<output id='frank' name='frank' ></output><br />
+				<hr />
+				<input style="cursor: pointer" type='submit' name='submit' value='Submit' />
+				<input style="cursor: pointer;" type='reset' name='reset' value='Clear Form' />
+			</form>
+<hr />
+		<div style="text-align: center; font-size: 12pt; font-family: normal; font-variant: normal;"><a href='#top'>Go to top</a></div>
+		<a id='bottom' />
+	</body>
+</html>
