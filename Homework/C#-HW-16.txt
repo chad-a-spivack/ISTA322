@@ -1,0 +1,102 @@
+# C# Homework Chapter 16
+**Chad Spivack**
+*March 3, 2021*
+
+### 1. Give five examples (using valid C# code) of the five bitwise operators listed in the text.
+
+~, <<, |, &, ^
+
+### 2. Does C# implement the right-shift (>>) operator? If so, give an example of its operation using valie
+C# code.
+
+Yes. 2 >> 204
+
+### 3. Explain in detail this code: bits & (1 << index);.
+
+What is the value of the 2nd bit from the right of the index value of the byte variable.
+
+### 4. Explain in detail this code: bits |= (1 << index);.
+
+Bit position goes from index to 1.
+
+### 5. Explain in detail this code: bits &= (1 << index);.
+
+Sets bit position at position index to 1.
+
+### 6. How does C# interpret this? bool peek = bits[n];
+
+Call to the get accessor for bits and the index argument is set to n.
+
+### 7. How does C# interpret this? bits[n] = true;
+
+set accessor which sets the index argument to n.
+
+### 8. How does C# interpret this? bits[n] ^= true;
+
+Gets the index value of n and sets it.
+
+### 9. Assume that users were assigned read, write, and execute permissions according to this scheme: read
+= 1, write = 2, execute = 4. How would you interpret the following user permissions:
+(a) permission = 0
+
+ none
+ 
+(b) permission = 1
+
+read
+
+(c) permission = 2
+
+write
+
+(d) permission = 3
+
+read, write
+
+(e) permission = 4
+
+execute
+
+
+(f) permission = 5
+
+read, execute
+
+(g) permission = 6
+
+read and execute
+
+(h) permission = 7
+
+read, write and execute
+
+### 10. Answer the previous question by converting the decimal permissions into binary permissions. What
+does this tell you about using this shceme of permissions?
+
+read = 1, write = 10, execute = 100
+
+permission =1
+
+read
+
+permission 10
+
+write
+
+permission 11
+
+read + write
+
+permission100
+
+execute
+
+permission 101
+
+read + execute
+
+
+
+
+
+

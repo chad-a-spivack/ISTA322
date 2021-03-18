@@ -1,0 +1,60 @@
+# ASP.NET Homework Chapter 5
+**Chad Spivack**
+*March 7, 2021*
+
+### 1. What is the purpose of the null conditional operator? Does it apply to value types or reference types?
+Why or why not?
+
+Allows you to deal with null values more elegantly.  It is a value type.  It is stored as declared value but it is simply just nullable.
+
+### 2. What is the null coalescing operator? What does it do?
+
+??, defines the null value instead of it simply just saying null.
+
+### 3. How is the null conditional operator different from a nullable type? What is the purpose of nullable
+types?
+
+The nullable type allows you to define a value type as nullable rather than just a variable.
+
+### 4. When you create an automatic property and initialize the property with a value, can the value be
+changed later? Can another value be assigned to the property? Can the value be changed in the
+constructor?
+
+Yes you can.  Yes, you just assign it another value in a constructor.
+
+### 5. What is an object initializer and what is it for? What is an collection initializer and what is it for?
+
+Creates an opject and specifies its property values.  Creates a collection and its contents in single step.
+
+### 6. What does the is keyword do?
+
+Matches the specified type
+
+### 7. How are extension methods defined?
+
+defined within same namespace as a static class.
+
+### 8. What is implicit typing or type inference? How do you implement it?
+
+defining the class when calling a method. ex. Int.parse()
+
+### 9. What is a default implementation of an interface? What is the purpose of a default implementation
+of an interface?
+
+Allows to you alter the implementation of the inetrface without altering the exisiting implementations
+
+### 10. What are asynchronous methods? Why should we use them? How are they used?
+
+Perform work in the background.  They eliminate coding bottle necks. await and async are the keywords.
+
+### 11. When you use the await keyword, do you have to use the async keyword? Why or why not?
+
+Yes. because of the way the compiler reads them.
+
+### 12. (not in book) What is the yield keyword used for? How do you use it?
+
+returns one element at a time
+
+### 13. What is the effect of using the nameof() expression?
+
+the compiler produces a name string instead of the user.

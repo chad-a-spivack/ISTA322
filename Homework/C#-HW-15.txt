@@ -1,0 +1,43 @@
+# C# Homework Chapter 15
+**Chad Spivack**
+*February 24, 2021*
+
+### 1. What is the difference between a property and a field?
+
+Property is a combination of a field and a method.  Purpose is just to provide access to a field.
+
+### 2. What is the difference between a property and a method?
+
+property is a method that returns information about an object whereas a method causes the object to exhibit a kind of a behavior.
+
+### 3. What is your understanding of encapsulation?
+
+All the fields properties methods of a class are kept within that class unless explicity accessing them.  
+If you do not want something to be accessed outside of the class you can use the private access modifier.
+
+### 4. Some languages are case insensitive, that is, an ‘a” and an “A” are considered to be the same letter.
+C# is case sensitive. What implications does this have regarding the naming of variables, methods,
+and other identifiers? Do you think that the difference in case in the initial character of two different
+identifiers is sufficient to distinguish them¿
+
+No, I think it would be too confusing.  After writing a ton of code, you will probably forget which one is which and not understand why something is not working properly.
+Easy solution is to name variable, object, etc very specifically even if it means typing more.
+
+### 5. Give an example that is not in the book of an instance where you might want to use a read-only
+property. Give an example not in the book of an instance where you might want to use s write-only
+property.
+
+A write only property could be a social security number. A read-only could be a customer ID.
+
+### 6. Can you think of a reason why you might ever want to make getters and setters private? Give an
+example. Also, make a case why getters and setters should never be private.
+
+The user wouldnt be able to access their own data.  Better to just restrict the class instead of the getter, setters.
+
+### 7. What are restrictions on the use of properties?
+
+You only assign a property after the objectg has been instantiated. Property can only have one set and one get. They can't take parameters.
+
+### 8. What is an object initializer? What is the syntax for an object initializer?
+
+Sets a given property to a inputted value.  Class obj = new constructror {property value};

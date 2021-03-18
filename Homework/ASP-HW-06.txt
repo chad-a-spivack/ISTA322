@@ -1,0 +1,50 @@
+# ASP.NET Homework Chapter 6
+**Chad Spivack**
+*March 8, 2021*
+
+### 1. What is unit testing as defined by the book?
+
+individual components are isolated and tested so their behavior can be validated.
+
+### 2. What is the convention for creating unit tests in ASP.NET Core applications?
+
+Creating a separate program with the unit tests.
+
+### 3. Name three unit test project tools used for ASP.NET Core applications.
+
+mstest, nuunit, xunit
+
+### 4. What is the convention for naming unit tests in ASP.NET Core applications?
+
+<Application-name>.test
+
+### 5. What is the convention for naming the test classes in AP.NET Core? What is the convention for
+naming the methods in the test classes?
+
+The name describes what the test does
+
+### 6. What is the purpose of the Fact attribute in Xunit? (not in book) What is the purpose of the Theory
+attribute in Xunit?
+
+Indicates that it is a test.
+
+### 7. Describe the different elements of the AAA testing pattern.
+
+Arange sets up the condition, Act performs the test, Assert verifies the result
+
+### 8. Describe the use of the methods in the Assert class. Describe the purpose, parameters, and return
+value of the Assert.Equals() method.
+
+The seem to all be boolean expressions. result is equal to expected outcome.  you pass in expected result and actual result as your parameters.  It returns a bool value.
+
+### 9. What is the key to isolating a component for testing?
+
+Using interfaces.
+
+### 10. What is a mocking package? What does it do?
+
+Creates mock objects for a test.
+
+### 11. (not in book) What is the difference between the Setup() and the SetupGet() methods of Moq?
+
+Setup() can be used for mocking a method.  SetupGet() specifically mocks the getter of a property.

@@ -1,0 +1,73 @@
+#ASP.NET Homework 02
+## Chad Spivack
+## February 22, 2021
+
+
+
+###. 1. What is the difference between Visual Studio and Visual Studio Code?
+
+VS code is a lightweight alternative fro ASP.net devlopment.
+
+###. 2. What is LocalDB?
+
+DB component to add data to when creating application.
+
+###. 3. What do these commands do?
+
+
+dotnet new globaljson --sdk-version 3.1.101 --output FirstProject
+creates a new .json file
+
+dotnet new mvc --no-https --output FirstProject --framework netcoreapp3.1
+
+Creates a new ASP.net prject with no https address.
+
+###. 4. What command do you use to build an ASP.NET project from the command line? What command
+do you use to run the project?
+
+dotnet new globaljson --sdk-version 3.1.101 --output FirstProject dotnet new mvc --no-https --output FirstProject --framework netcoreapp3.1
+
+
+
+###. 5. What is the purpose of an endpoint?
+
+handle incoming requests.
+
+###. 6. What is a controller?
+
+C# class that is derived from the ASPNET-CORe.mvc.controller class (built-in controller base class)
+
+###. 7. Where are actions defined?
+
+in a controller
+
+###. 8. What is the purpose of the routing system?
+
+selecting the endpoint that will hamd;e the HTTP request.
+
+###. 9. Assume that your ASP.NET application runs in a browser with a URL like http://localhost:5000.
+
+List the three default routes configured by the ASP.NET Core routing system.
+
+localhost:5000/
+localhost:5000/home
+localhost:5000/home/index
+
+###. 10. What does the ViewResult object instruct ASP.NET Core to do?
+
+render a view
+
+###. 11. How does ASP.NET Core know what View is to be called from an action method?
+
+You specify the name of the view you want to return.
+
+###. 12. What is the job of an action method?
+
+
+handles requests, similar to creating rules.
+
+
+###. 13. What is a view model?
+
+class that contains the fields which are represented in a strongly-typed view.
+

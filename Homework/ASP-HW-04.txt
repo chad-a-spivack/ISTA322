@@ -1,0 +1,80 @@
+# ASP.Net Homework Chapter 04
+**Chad Spivack**
+*March 1, 2021*
+
+### 1. What are the .NET SDK command line tools used for? Is their use required? Why or why not?
+
+They are used for creating, managing, building and running projects.  They are required when using VS code.  CLI tools are simple and concise.  Easier to find everything.
+
+### 2. What kind of applications do the following templates create? Run these commands and read the
+documentation. A brief summary of each template is sufficient.
+
+*dotnet new console --help
+
+Console Application
+
+*dotnet new mvc --help
+
+MVC Application
+
+dotnet new web --help
+
+Web application.
+
+
+### 3. What, specifically, do the following commands do?
+
+*dotnet new globaljson --sdk-version 3.1.101 --output MySolution/MyProject*
+
+places a globaljson file inside mysolution/myproject which specifies which version of .NET core that will be used.
+
+*dotnet new web --no-https --output MySolution/MyProject --framework netcoreapp3.1*
+
+creates a new web application called MySolution
+
+*dotnet new sln -o MySolution*
+
+creates a new solution file called MySolution.
+
+
+*dotnet sln MySolution add MySolution/MyProject*
+
+add the solution file to MySolution
+
+### 4. What is the purpose of the global.json file?
+
+specify what version of .NET core will be used.
+
+### 5. What does the method app.UseStaticFiles() do?
+
+adds support for responding to HTTP requests with static content in the wwwroot folder.
+
+### 6. What do the following two commands do?
+
+*dotnet build*
+
+builds the projects
+
+
+*dotnet run*
+
+runs the project
+
+### 7. (not in book) You cah manage pacakges using the NuGet package manager and the command line tool
+dotnet add package. What are packages and what are they used for.
+
+They add external libraries of code to an application.
+
+### 8. What are tool packages and what are they used for?
+
+Install commands that can be used from the cli to perform actions on .Net core apps.
+
+
+### 10. What are client side packages and what are they used for?
+
+contain content that is delivered to the client such as images or CSS stylesheets
+
+### 11. List two ways that a developer can debug code.
+
+Running a debugger through VS or serializng an object and having it print to the console.
+

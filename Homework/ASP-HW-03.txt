@@ -1,0 +1,58 @@
+# ASP.Net Homework Chapter 3
+**Chad Spivack**
+*February 28, 2021*
+
+### 1. What is the most important part of an ASP.NET Core 3 application?
+
+The data model.
+
+### 2. What is the domain model?
+
+Contains the C# objects that make up the application universe.
+
+### 3. Where are the model classes in an ASP.NET Core 3 application placed?
+
+A folder named Models
+
+### 4. How many action methods can a controller class define?
+
+unlimited
+
+### 5. What is a tag helper?
+
+Instruction for Razor that will be performed when the view is rendered
+
+### 6. What does the asp-action attribute do?
+
+instruction to add to a tag helper that contains a URL
+
+### 7. What is the difference between HTTP GET and HTTP POST? This is an important question, and you
+should understand the difference.
+
+Get is the default version of the page.  Post is the version of the page after receiving user submitted data.
+
+### 8. What is model binding?
+
+incoming data is parsed and the key pairs in the request are used to populate properties of domain model types.
+
+### 9. Why should we validate user data? How do we validate user data?
+
+Users could enter nonsense or enter an empty form.  Apply validation attributes to model classes.
+
+### 10. What, specifically, is the ModelState.IsValid property?
+
+Its a boolean method that verifies the data constraints have worked.
+
+### 11. What does the asp-validation-summary do?
+
+Lists the types of validation errors
+
+### 12. Static content consists of content such as images, script files, style files, etc. In an ASP.NET Core
+application, what is the name of the folder that cotains static content?
+
+wwwroot folder.
+
+### 13. What is Bootstrap? Who developed Bootstrap? Is Bootstrap a proprietary package? If not, what is
+it?
+
+CSS templates developed by Twitter that are open source.

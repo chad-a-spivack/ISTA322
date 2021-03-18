@@ -1,0 +1,43 @@
+# C# Homework chapter 17
+**Chad Spivack**
+*March 9, 2021*
+
+### 1. What is a type parameter?
+
+Specify types of objects on which they operate.
+
+### 2. What does a type parameter do?
+
+It allows the compiler to perfomr strict type checking at compile time and you no longer have to explicitly cast objects. Creates a new class.
+
+### 3. How many type parameters can a generic class have?
+
+multiple
+
+### 4. What is the difference between a generic class and a generalized class?
+
+Generalized class designed to take parameters that can be cast to different types.
+
+### 5. What is a constraint? How do you specify a constraint?
+
+You can limit the type parameters to those that implement a particular set of interfaces. Where T : Interface
+
+### 6. What is a generic method? How do you define a generic method?
+
+You can specify the types of parameters  and the reutrn type by using a type parameter.  The same way you define a generic class.
+
+### 7. What do we mean when we cay that a generic type interface is invariant?
+
+You can't assign an object of the interface to the class that inherits from it.
+
+### 8. What do we mean when we cay that a generic type interface is covariant?
+
+As long as their is a valid conversion, you can assign a to b and vice versa.
+
+### 9. Does covariance work with value types? Does it work with reference types?
+
+Only works with reference types.  Value types cannot form inheritance hierarchies.
+
+### 10. What do we mean when we cay that a generic type interface is contravariant?
+
+If a interface can take an object, it can take a string for example.

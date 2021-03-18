@@ -1,0 +1,58 @@
+# C# Homework chapter 13
+**Chad Spivack**
+*February 23, 2021*
+
+### 1. What is an interface as the term is used on object-oriented programmoing?
+
+describes the functionality that class should provide but not how this functionality is implemented
+
+### 2. How do you define an interface?
+
+same way as a class except you use "interface" instead of "class"
+
+### 3. Can an interface have variables, fields, or properties?
+
+no
+
+### 4. How do you define a method in an interface?
+
+you declare the method and then replace the body with a semi-colon
+
+### 5. Can you instantiate an object through an interface? Why or why not?
+
+no because there is not an implementation of an interface. However you can if a class inherits from the interface 
+
+### 6. Using the new keyword, can you declare a reference to an interface?
+
+no, the object has to be instantiated by its class first and then you can reference the interface.
+
+### 7. Can an object inherit from multiple interfaces? Can a class implement multiple interfaces? If so, how
+can it do so?
+
+
+yes, yes. separating the interfaces by commas.
+
+
+### 8. What does it mean to explicitely implement an interface?
+
+to declare which interface is coming from if a class inherits from multiple interfaces.  This matters when something has the name.
+
+### 9. What are the restrictions on interfaces?
+
+cant define constructors, can't specify access modifiers, can't nest types, can't inherit from a structure or class.
+
+### 10. What is the difference between an abstract class and an interface?
+
+abstract classes only exist to provide framework for an inherited class. abstract classes can have implementations.
+
+### 11. What is an abstract method?
+
+A method that is created to be overridden
+
+### 12. What is an sealed class?
+
+Prevents a class from being used as a base class.
+
+### 13. What is an sealed method?
+
+has to be in an unsealed class.  Makes an inherited class unable to inhertit the sealed method.
